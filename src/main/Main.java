@@ -14,12 +14,13 @@ import util.ArchivoTexto;
 import util.Exportador;
 
 import java.util.List;
-import java.util.Scanner;
+import java.util.Scanner; //leer datos del teclado
 
 // Clase principal del programa
 public class Main {
 
     // Nombre del archivo binario donde se guardan las personas
+    // static final - No cambia - Es una constante del sistema
     private static final String ARCHIVO = "personas.dat";
 
     public static void main(String[] args) {
@@ -194,4 +195,5 @@ public class Main {
         }
     }
 }
+
 
