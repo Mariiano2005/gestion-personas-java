@@ -6,8 +6,8 @@ package util;
 
 import model.Empleado;
 import model.Persona;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import java.io.BufferedWriter; //escribe texto mas eficientemente
+import java.io.FileWriter; //crea el archivo
 import java.util.List;
 
 // Exporta solo los empleados a un archivo de texto
@@ -17,7 +17,7 @@ public class Exportador {
     public static void exportarEmpleados(String nombreArchivo,
                                          List<? extends Persona> personas) {
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivo));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivo)); //FileWriter crea el archivo //BufferedWriter permite escribir texto línea por línea
 
             // Encabezado del archivo
             bw.write("LISTADO DE EMPLEADOS");
@@ -39,5 +39,6 @@ public class Exportador {
         }
     }
 }
+
 
 
