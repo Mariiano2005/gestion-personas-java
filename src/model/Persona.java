@@ -4,7 +4,7 @@
  */
 package model;
 
-import java.io.Serializable;
+import java.io.Serializable; //ppermite que los objestos se conviertan en bytes
 
 // Clase base del sistema
 // De aca heredan las demas personas
@@ -51,8 +51,10 @@ public abstract class Persona implements Serializable {
         this.edad = edad;
     }
 
+    //POLIMORFISMO (INICIO)
     // Cada tipo de persona muestra sus datos a su manera
     public abstract String mostrarDatos();
 }
+
 
 
