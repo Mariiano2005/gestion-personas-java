@@ -5,9 +5,9 @@
 package util;
 
 import model.Persona;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.util.List;
+import java.io.BufferedWriter; //escribe texto mas eficientemente
+import java.io.FileWriter;  //crea el archivo
+import java.util.List; 
 
 // Guarda las personas en un archivo de texto
 public class ArchivoTexto {
@@ -16,7 +16,7 @@ public class ArchivoTexto {
     public static void guardarPersonas(String nombreArchivo,
                                        List<? extends Persona> personas) {
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivo));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivo)); //FileWriter rea el archivo // BufferedWriter permite escribir líneas mas rapido
 
             // Encabezado del archivo
             bw.write("LISTADO DE PERSONAS");
@@ -36,5 +36,6 @@ public class ArchivoTexto {
         }
     }
 }
+
 
 
