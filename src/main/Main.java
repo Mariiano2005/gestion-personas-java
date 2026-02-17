@@ -7,7 +7,7 @@ package main;
 import util.ExportadorCSV;
 import util.ExportadorJSON;
 
-import model.*;
+import model.*; //importa todas las clases model
 import service.GestorPersonas;
 import util.ArchivoBinario;
 import util.ArchivoTexto;
@@ -195,5 +195,6 @@ public class Main {
         }
     }
 }
+
 
 
