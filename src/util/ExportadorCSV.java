@@ -9,8 +9,8 @@ import model.Empleado;
 import model.Cliente;
 import model.Proveedor;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import java.io.BufferedWriter; //escribe texto mas eficientemente
+import java.io.FileWriter; //crea el archivo
 import java.util.List;
 
 // Exporta la lista de personas a un archivo CSV
@@ -56,5 +56,6 @@ public class ExportadorCSV {
         }
     }
 }
+
 
 
